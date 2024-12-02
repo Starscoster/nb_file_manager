@@ -1,0 +1,13 @@
+from nb_file_manager import nb_fileManager_UI as fm_ui
+import imp
+imp.reload(fm_ui)
+
+try:
+    file_manager_ui.show()
+        
+except :
+    file_manager_ui = fm_ui.ProjectManagerUI()
+    file_manager_ui.show() 
+    
+
+    
